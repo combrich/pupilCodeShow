@@ -48,11 +48,11 @@ int shangdian1(int m2)
 {
 	if (m2 == 1)
 	{
-		printf("ÄúµÄ½ğ±ÒÊıÎª");
+		printf("æ‚¨çš„é‡‘å¸æ•°ä¸º");
 		cout << jb;
 		cout << endl;
 		int a;
-		printf("ÕâÀïÓĞ1.AK47(3000),2.°ÍÀ×ÌØ(20000),3.É³Ä®Ö®Ó¥£¨2000£©£¬4.¾üÓÃÇá¸«£¨1500£©");
+		printf("è¿™é‡Œæœ‰1.AK47(3000),2.å·´é›·ç‰¹(20000),3.æ²™æ¼ ä¹‹é¹°ï¼ˆ2000ï¼‰ï¼Œ4.å†›ç”¨è½»æ–§ï¼ˆ1500ï¼‰");
 		cin >> a;
 		if (a == 1)
 		{
@@ -60,8 +60,8 @@ int shangdian1(int m2)
 			if (jb >= 3000)
 			{
 				jb = jb - 3000;
-				printf("¹ºÂò³É¹¦");
-				printf("ÊÇ·ñ¼ÌĞøÓÎÏ·\n1.ÊÇ 2.·ñ");
+				printf("è´­ä¹°æˆåŠŸ");
+				printf("æ˜¯å¦ç»§ç»­æ¸¸æˆ\n1.æ˜¯ 2.å¦");
 				int jixu;
 				cin >> jixu;
 				if (jixu == 1)
@@ -71,8 +71,8 @@ int shangdian1(int m2)
 			}
 			else
 			{
-				printf("½ğ±Ò²»¹»");
-				printf("ÊÇ·ñ¼ÌĞøÓÎÏ·\n1.ÊÇ 2.·ñ");
+				printf("é‡‘å¸ä¸å¤Ÿ");
+				printf("æ˜¯å¦ç»§ç»­æ¸¸æˆ\n1.æ˜¯ 2.å¦");
 				int jixu;
 				cin >> jixu;
 				if (jixu == 1)
@@ -87,8 +87,8 @@ int shangdian1(int m2)
 			if (jb >= 20000)
 			{
 				jb = jb - 20000;
-				printf("¹ºÂò³É¹¦");
-				printf("ÊÇ·ñ¼ÌĞøÓÎÏ·\n1.ÊÇ 2.·ñ");
+				printf("è´­ä¹°æˆåŠŸ");
+				printf("æ˜¯å¦ç»§ç»­æ¸¸æˆ\n1.æ˜¯ 2.å¦");
 				int jixu;
 				cin >> jixu;
 				if (jixu == 1)
@@ -98,8 +98,8 @@ int shangdian1(int m2)
 			}
 			else
 			{
-				printf("½ğ±Ò²»¹»");
-				printf("ÊÇ·ñ¼ÌĞøÓÎÏ·\n1.ÊÇ 2.·ñ");
+				printf("é‡‘å¸ä¸å¤Ÿ");
+				printf("æ˜¯å¦ç»§ç»­æ¸¸æˆ\n1.æ˜¯ 2.å¦");
 				int jixu;
 				cin >> jixu;
 				if (jixu == 1)
@@ -114,8 +114,8 @@ int shangdian1(int m2)
 			if (jb >= 2000)
 			{
 				jb = jb - 2000;
-				printf("¹ºÂò³É¹¦");
-				printf("ÊÇ·ñ¼ÌĞøÓÎÏ·\n1.ÊÇ 2.·ñ");
+				printf("è´­ä¹°æˆåŠŸ");
+				printf("æ˜¯å¦ç»§ç»­æ¸¸æˆ\n1.æ˜¯ 2.å¦");
 				int jixu;
 				cin >> jixu;
 				if (jixu == 1)
@@ -125,8 +125,8 @@ int shangdian1(int m2)
 			}
 			else
 			{
-				printf("½ğ±Ò²»¹»");
-				printf("ÊÇ·ñ¼ÌĞøÓÎÏ·\n1.ÊÇ 2.·ñ");
+				printf("é‡‘å¸ä¸å¤Ÿ");
+				printf("æ˜¯å¦ç»§ç»­æ¸¸æˆ\n1.æ˜¯ 2.å¦");
 				int jixu;
 				cin >> jixu;
 				if (jixu == 1)
@@ -141,8 +141,8 @@ int shangdian1(int m2)
 			if (jb >= 1500)
 			{
 				jb = jb - 1500;
-				printf("¹ºÂò³É¹¦");
-				printf("ÊÇ·ñ¼ÌĞøÓÎÏ·\n1.ÊÇ 2.·ñ");
+				printf("è´­ä¹°æˆåŠŸ");
+				printf("æ˜¯å¦ç»§ç»­æ¸¸æˆ\n1.æ˜¯ 2.å¦");
 				int jixu;
 				cin >> jixu;
 				if (jixu == 1)
@@ -152,8 +152,8 @@ int shangdian1(int m2)
 			}
 			else
 			{
-				printf("½ğ±Ò²»¹»");
-				printf("ÊÇ·ñ¼ÌĞøÓÎÏ·\n1.ÊÇ 2.·ñ");
+				printf("é‡‘å¸ä¸å¤Ÿ");
+				printf("æ˜¯å¦ç»§ç»­æ¸¸æˆ\n1.æ˜¯ 2.å¦");
 				int jixu;
 				cin >> jixu;
 				if (jixu == 1)
@@ -179,33 +179,33 @@ int guocheng()
 		m2 = game();
 		if (m2 == 1)
 		{
-			printf("Ê¤ÀûÁË£¡£¡£¡\n");
-			printf("½ğ±Ò¼Ó2000\n");
-			printf("×êÊ¯¼Ó1000\n");
-			printf("µÈ¼¶¼Ó1\n");
+			printf("èƒœåˆ©äº†ï¼ï¼ï¼\n");
+			printf("é‡‘å¸åŠ 2000\n");
+			printf("é’»çŸ³åŠ 1000\n");
+			printf("ç­‰çº§åŠ 1\n");
 			jb2(m2);
 			zs(m2);
 			dengji = dengji + 1;
 		}
 		if (m2 == 0)
 		{
-			printf("ÊäÁË¡£\n");
-			printf("½ğ±Ò¼Ó1000\n");
-			printf("×êÊ¯¼Ó500");
-			printf("µÈ¼¶¼Ó0.5");
+			printf("è¾“äº†ã€‚\n");
+			printf("é‡‘å¸åŠ 1000\n");
+			printf("é’»çŸ³åŠ 500");
+			printf("ç­‰çº§åŠ 0.5");
 			jb2(m2);
 			zs(m2);
 			dengji = dengji + 0.5;
 		}
-		printf("ÊÇ·ñ½áÊøÓÎÏ·\n");
-		printf("1ÊÇ 2·ñ\n(ÊäÈëĞòºÅ)");
+		printf("æ˜¯å¦ç»“æŸæ¸¸æˆ\n");
+		printf("1æ˜¯ 2å¦\n(è¾“å…¥åºå·)");
 		int m;
 		cin >> m;
 		while (m != 1 && m != 2)
 		{
-			printf("ÊäÈë´íÎó\n");
-			printf("ÊÇ·ñ½áÊøÓÎÏ·\n");
-			printf("1ÊÇ 2·ñ\n(ÊäÈëĞòºÅ)");
+			printf("è¾“å…¥é”™è¯¯\n");
+			printf("æ˜¯å¦ç»“æŸæ¸¸æˆ\n");
+			printf("1æ˜¯ 2å¦\n(è¾“å…¥åºå·)");
 			cin >> m;
 		}
 		if (m == 1)
@@ -214,16 +214,16 @@ int guocheng()
 		}
 		if (m == 2)
 		{
-			printf("ºÃµÄ£¬ÎÒÃÇ¼ÌĞøÓÎÏ·\n");
-			printf("ÄúÒªÈ¥ÄÄÀï£¿\n1.ÉÌµê¹ºÂòÇ¹ 2.¼ÌĞøÓÎÏ·\n");
-			printf("£¨ÊäÈëĞòºÅ£©");
+			printf("å¥½çš„ï¼Œæˆ‘ä»¬ç»§ç»­æ¸¸æˆ\n");
+			printf("æ‚¨è¦å»å“ªé‡Œï¼Ÿ\n1.å•†åº—è´­ä¹°æª 2.ç»§ç»­æ¸¸æˆ\n");
+			printf("ï¼ˆè¾“å…¥åºå·ï¼‰");
 			int xuhao2;
 			cin >> xuhao2;
 			while (xuhao2 != 1 && xuhao2 != 2)
 			{
-				printf("ÊäÈë´íÎó\n");
-				printf("ÄúÒªÈ¥ÄÄÀï£¿\n1.ÉÌµê¹ºÂòÇ¹ 2.¼ÌĞøÓÎÏ·\n");
-				printf("£¨ÊäÈëĞòºÅ£©");
+				printf("è¾“å…¥é”™è¯¯\n");
+				printf("æ‚¨è¦å»å“ªé‡Œï¼Ÿ\n1.å•†åº—è´­ä¹°æª 2.ç»§ç»­æ¸¸æˆ\n");
+				printf("ï¼ˆè¾“å…¥åºå·ï¼‰");
 				cin >> xuhao2;
 			}
 			if (xuhao2 == 1)
@@ -233,7 +233,7 @@ int guocheng()
 
 		}
 	} while (1);
-	printf("ÓÎÏ·½áÊø£¡£¡£¡");
+	printf("æ¸¸æˆç»“æŸï¼ï¼ï¼");
 	return 0;
 }
 
@@ -246,17 +246,17 @@ int gamezhongjian(int n)
 	{
 		if (zhaoshu == 1)
 		{
-			printf("Æ½¾Ö\n");
+			printf("å¹³å±€\n");
 			return s = 2;
 		}
 		if (zhaoshu == 2)
 		{
-			printf("ÈËÀàÊ¤Àû\n");
+			printf("äººç±»èƒœåˆ©\n");
 			return s = 0;
 		}
 		if (zhaoshu == 3)
 		{
-			printf("µçÄÔÊ¤Àû\n");
+			printf("ç”µè„‘èƒœåˆ©\n");
 			return s = 1;
 		}
 	}
@@ -264,17 +264,17 @@ int gamezhongjian(int n)
 	{
 		if (zhaoshu == 1)
 		{
-			printf("µçÄÔÊ¤Àû\n");
+			printf("ç”µè„‘èƒœåˆ©\n");
 			return s = 1;
 		}
 		if (zhaoshu == 2)
 		{
-			printf("Æ½¾Ö\n");
+			printf("å¹³å±€\n");
 			return s = 2;
 		}
 		if (zhaoshu == 3)
 		{
-			printf("ÈËÀàÊ¤Àû\n");
+			printf("äººç±»èƒœåˆ©\n");
 			return s = 0;
 		}
 	}
@@ -282,18 +282,18 @@ int gamezhongjian(int n)
 	{
 		if (zhaoshu == 1)
 		{
-			printf("ÈËÀàÊ¤Àû\n");
+			printf("äººç±»èƒœåˆ©\n");
 			return s = 0;
 		}
 		if (zhaoshu == 2)
 		{
-			printf("µçÄÔÊ¤Àû\n");
+			printf("ç”µè„‘èƒœåˆ©\n");
 			return s = 1;
 		}
 		if (zhaoshu == 3)
 		{
 
-			printf("Æ½¾Ö\n");
+			printf("å¹³å±€\n");
 			return s = 2;
 		}
 	}
@@ -303,113 +303,113 @@ void jiemian2(int a)
 	int b;
 	if (a == 1)
 	{
-		printf("1ÖÕ½áÕ½Ê¿\n");
-		printf("2ÄÄß¸½«¾ü\n");
-		printf("3ÔÂ¹¬ÊØÎÀ\n");
-		printf("4¶·ÂŞ´óÂ½--ÌÆÈı\n");
-		printf("5Ñô¹âÉ³Ì²\n");
-		printf("(ÊäÈëĞòºÅ)\n");
+		printf("1ç»ˆç»“æˆ˜å£«\n");
+		printf("2å“ªå’å°†å†›\n");
+		printf("3æœˆå®«å®ˆå«\n");
+		printf("4æ–—ç½—å¤§é™†--å”ä¸‰\n");
+		printf("5é˜³å…‰æ²™æ»©\n");
+		printf("(è¾“å…¥åºå·)\n");
 		cin >> b;
 		if (b == 1)
 		{
-			printf("ºÃµÄ,ÄãÒÑ¾­³ÉÎªÖÕ½áÕ½Ê¿\n");
+			printf("å¥½çš„,ä½ å·²ç»æˆä¸ºç»ˆç»“æˆ˜å£«\n");
 		}
 		if (b == 2)
 		{
-			printf("ºÃµÄ,ÄãÒÑ¾­³ÉÎªÄÄß¸½«¾ü\n");
+			printf("å¥½çš„,ä½ å·²ç»æˆä¸ºå“ªå’å°†å†›\n");
 		}
 		if (b == 3)
 		{
-			printf("ºÃµÄ,ÄãÒÑ¾­³ÉÎªÔÂ¹¬ÊØÎÀ\n");
+			printf("å¥½çš„,ä½ å·²ç»æˆä¸ºæœˆå®«å®ˆå«\n");
 		}
 		if (b == 4)
 		{
-			printf("ºÃµÄ,ÄãÒÑ¾­³ÉÎªÌÆÈı\n");
+			printf("å¥½çš„,ä½ å·²ç»æˆä¸ºå”ä¸‰\n");
 		}
 		if (b == 5)
 		{
-			printf("ºÃµÄ,ÄãÒÑ¾­³ÉÎªÑô¹âÉ³Ì²\n");
+			printf("å¥½çš„,ä½ å·²ç»æˆä¸ºé˜³å…‰æ²™æ»©\n");
 		}
 		while (b <= 0 || b >= 6)
 		{
-			printf("ÊäÈë´íÎó£¬ÇëÖØĞÂÊäÈë\n");
-			printf("1ÖÕ½áÕ½Ê¿\n");
-			printf("2ÄÄß¸½«¾ü\n");
-			printf("3ÔÂ¹¬ÊØÎÀ\n");
-			printf("4¶·ÂŞ´óÂ½--ÌÆÈı\n");
-			printf("(ÊäÈëĞòºÅ)\n");
+			printf("è¾“å…¥é”™è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥\n");
+			printf("1ç»ˆç»“æˆ˜å£«\n");
+			printf("2å“ªå’å°†å†›\n");
+			printf("3æœˆå®«å®ˆå«\n");
+			printf("4æ–—ç½—å¤§é™†--å”ä¸‰\n");
+			printf("(è¾“å…¥åºå·)\n");
 			cin >> b;
 			if (b == 1)
 			{
-				printf("ºÃµÄ,ÄãÒÑ¾­³ÉÎªÖÕ½áÕ½Ê¿\n");
+				printf("å¥½çš„,ä½ å·²ç»æˆä¸ºç»ˆç»“æˆ˜å£«\n");
 			}
 			if (b == 2)
 			{
-				printf("ºÃµÄ,ÄãÒÑ¾­³ÉÎªÄÄß¸½«¾ü\n");
+				printf("å¥½çš„,ä½ å·²ç»æˆä¸ºå“ªå’å°†å†›\n");
 			}
 			if (b == 3)
 			{
-				printf("ºÃµÄ,ÄãÒÑ¾­³ÉÎªÔÂ¹¬ÊØÎÀ\n");
+				printf("å¥½çš„,ä½ å·²ç»æˆä¸ºæœˆå®«å®ˆå«\n");
 			}
 			if (b == 4)
 			{
-				printf("ºÃµÄ,ÄãÒÑ¾­³ÉÎªÌÆÈı\n");
+				printf("å¥½çš„,ä½ å·²ç»æˆä¸ºå”ä¸‰\n");
 			}
 		}
 	}
 	if (a == 2)
 	{
-		printf("1ÍÃÍÃÕ½Ê¿\n");
-		printf("2ÔÂ¹¬ÏÉ×Ó\n");
-		printf("3Ñô¹âĞ£»¨\n");
-		printf("4¶·ÂŞ´óÂ½--Ğ¡Îè\n");
-		printf("5¹Å´ú¹«Ö÷\n");
-		printf("(ÊäÈëĞòºÅ)\n");
+		printf("1å…”å…”æˆ˜å£«\n");
+		printf("2æœˆå®«ä»™å­\n");
+		printf("3é˜³å…‰æ ¡èŠ±\n");
+		printf("4æ–—ç½—å¤§é™†--å°èˆ\n");
+		printf("5å¤ä»£å…¬ä¸»\n");
+		printf("(è¾“å…¥åºå·)\n");
 		cin >> b;
 		if (b == 1)
 		{
-			printf("ºÃµÄ,ÄãÒÑ¾­³ÉÎªÍÃÍÃÕ½Ê¿\n");
+			printf("å¥½çš„,ä½ å·²ç»æˆä¸ºå…”å…”æˆ˜å£«\n");
 		}
 		if (b == 2)
 		{
-			printf("ºÃµÄ,ÄãÒÑ¾­³ÉÎªÔÂ¹¬ÏÉ×Ó\n");
+			printf("å¥½çš„,ä½ å·²ç»æˆä¸ºæœˆå®«ä»™å­\n");
 		}
 		if (b == 3)
 		{
-			printf("ºÃµÄ,ÄãÒÑ¾­³ÉÎªÑô¹âĞ£»¨\n");
+			printf("å¥½çš„,ä½ å·²ç»æˆä¸ºé˜³å…‰æ ¡èŠ±\n");
 		}
 		if (b == 4)
 		{
-			printf("ºÃµÄ,ÄãÒÑ¾­³ÉÎªĞ¡Îè\n");
+			printf("å¥½çš„,ä½ å·²ç»æˆä¸ºå°èˆ\n");
 		}
 		if (b == 5)
 		{
-			printf("ºÃµÄ,ÄãÒÑ¾­³ÉÎª¹Å´ú¹«Ö÷\n");
+			printf("å¥½çš„,ä½ å·²ç»æˆä¸ºå¤ä»£å…¬ä¸»\n");
 		}
 		while (b <= 0 || b >= 6)
 		{
-			printf("ÊäÈë´íÎó£¬ÇëÖØĞÂÊäÈë\n");
-			printf("1ÍÃÍÃÕ½Ê¿\n");
-			printf("2ÔÂ¹¬ÏÉ×Ó\n");
-			printf("3Ñô¹âĞ£»¨\n");
-			printf("4¶·ÂŞ´óÂ½--Ğ¡Îè");
-			printf("(ÊäÈëĞòºÅ)\n");
+			printf("è¾“å…¥é”™è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥\n");
+			printf("1å…”å…”æˆ˜å£«\n");
+			printf("2æœˆå®«ä»™å­\n");
+			printf("3é˜³å…‰æ ¡èŠ±\n");
+			printf("4æ–—ç½—å¤§é™†--å°èˆ");
+			printf("(è¾“å…¥åºå·)\n");
 			cin >> b;
 			if (b == 1)
 			{
-				printf("ºÃµÄ,ÄãÒÑ¾­³ÉÎªÍÃÍÃÕ½Ê¿\n");
+				printf("å¥½çš„,ä½ å·²ç»æˆä¸ºå…”å…”æˆ˜å£«\n");
 			}
 			if (b == 2)
 			{
-				printf("ºÃµÄ,ÄãÒÑ¾­³ÉÎªÔÂ¹¬ÏÉ×Ó\n");
+				printf("å¥½çš„,ä½ å·²ç»æˆä¸ºæœˆå®«ä»™å­\n");
 			}
 			if (b == 3)
 			{
-				printf("ºÃµÄ,ÄãÒÑ¾­³ÉÎªÑô¹âĞ£»¨\n");
+				printf("å¥½çš„,ä½ å·²ç»æˆä¸ºé˜³å…‰æ ¡èŠ±\n");
 			}
 			if (b == 4)
 			{
-				printf("ºÃµÄ,ÄãÒÑ¾­³ÉÎªĞ¡Îè\n");
+				printf("å¥½çš„,ä½ å·²ç»æˆä¸ºå°èˆ\n");
 			}
 		}
 		return;
@@ -418,34 +418,34 @@ void jiemian2(int a)
 void jiemian()
 {
 	int a;
-	printf("»¶Ó­½øÈë¡¶³Ô¼¦(¼ôµ¶¡¢Ê¯Í·¡¢²¼°æ)¡·\n");
-	printf("ÇëÊäÈëÃÜÂë£º(ÃÜÂëÊÇ");
+	printf("æ¬¢è¿è¿›å…¥ã€Šåƒé¸¡(å‰ªåˆ€ã€çŸ³å¤´ã€å¸ƒç‰ˆ)ã€‹\n");
+	printf("è¯·è¾“å…¥å¯†ç ï¼š(å¯†ç æ˜¯");
 	srand(time(0));
 	int mima2 = rand() % 100 + 1;
-	cout << mima2 << "*15µÄ»ı)";
+	cout << mima2 << "*15çš„ç§¯)";
 	cout << endl;
-	printf("²»Òª¿Õ¸ñ£¡£¡£¡");
+	printf("ä¸è¦ç©ºæ ¼ï¼ï¼ï¼");
 	int mima;
 	printf("\n");
 	cin >> mima;
 	while (mima != mima2 * 15)
 	{
-		printf("ÊäÈë´íÎó£¬ÇëÖØĞÂÊäÈë\n");
-		printf("ÇëÖØĞÂÊäÈëÃÜÂë£º(ÃÜÂë");
-		cout << mima2 << "*15µÄ»ı)";
+		printf("è¾“å…¥é”™è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥\n");
+		printf("è¯·é‡æ–°è¾“å…¥å¯†ç ï¼š(å¯†ç ");
+		cout << mima2 << "*15çš„ç§¯)";
 		cout << endl;
-		printf("²»Òª¿Õ¸ñ£¡£¡£¡");
+		printf("ä¸è¦ç©ºæ ¼ï¼ï¼ï¼");
 		cin >> mima;
 	}
-	printf("ÄãºÃ£¬ÇëÊäÈëĞÔ±ğ\n");
-	printf("1ÄĞ£¬2Å®(ÊäÈëĞòºÅ)\n");
+	printf("ä½ å¥½ï¼Œè¯·è¾“å…¥æ€§åˆ«\n");
+	printf("1ç”·ï¼Œ2å¥³(è¾“å…¥åºå·)\n");
 	cin >> a;
 	int b;
 	while (a != 1 && a != 2)
 	{
-		printf("ÊäÈë´íÎó£¬ÇëÖØĞÂÊäÈë\n");
-		printf("ÄãºÃ£¬ÇëÊäÈëĞÔ±ğ\n");
-		printf("1ÄĞ£¬2Å®(ÊäÈëĞòºÅ)\n");
+		printf("è¾“å…¥é”™è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥\n");
+		printf("ä½ å¥½ï¼Œè¯·è¾“å…¥æ€§åˆ«\n");
+		printf("1ç”·ï¼Œ2å¥³(è¾“å…¥åºå·)\n");
 		cin >> a;
 	}
 	jiemian2(a);
@@ -455,7 +455,7 @@ void jiemian()
 
 int game()
 {
-	printf("ÓÎÏ·¿ªÊ¼£¡£¡£¡");
+	printf("æ¸¸æˆå¼€å§‹ï¼ï¼ï¼");
 	int m;
 	int i = 0;
 	int j = 0;
@@ -463,11 +463,11 @@ int game()
 	{
 		int renxue = 100;
 		int dianxue = 100;
-		printf("\nÇëÏÈ³öÕĞ\n");
-		printf("(1Ê¯Í·)\n");
-		printf("(2¼ôµ¶)\n");
-		printf("(3²¼)\n");
-		printf("(ÊäÈëĞòºÅ)\n");
+		printf("\nè¯·å…ˆå‡ºæ‹›\n");
+		printf("(1çŸ³å¤´)\n");
+		printf("(2å‰ªåˆ€)\n");
+		printf("(3å¸ƒ)\n");
+		printf("(è¾“å…¥åºå·)\n");
 		int n;
 		cin >> n;
 		srand(time(0));
@@ -476,12 +476,12 @@ int game()
 		int m;
 		while (n != 1 && n != 2 && n != 3)
 		{
-			printf("ÊäÈë´íÎó£¬ÇëÖØĞÂÊäÈë\n");
-			printf("\nÇëÔÙ´Î³öÕĞ\n");
-			printf("(1Ê¯Í·)\n");
-			printf("(2¼ôµ¶)\n");
-			printf("(3²¼)\n");
-			printf("(ÊäÈëĞòºÅ)\n");
+			printf("è¾“å…¥é”™è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥\n");
+			printf("\nè¯·å†æ¬¡å‡ºæ‹›\n");
+			printf("(1çŸ³å¤´)\n");
+			printf("(2å‰ªåˆ€)\n");
+			printf("(3å¸ƒ)\n");
+			printf("(è¾“å…¥åºå·)\n");
 			cin >> n;
 		}
 		int  game3 = gamezhongjian(n);
@@ -493,89 +493,89 @@ int game()
 
 				if (i == 1)
 				{
-					printf("ÈËÀà×¼±¸½µÂä");
+					printf("äººç±»å‡†å¤‡é™è½");
 					break;
 				}
 				if (i == 2)
 				{
-					printf("ÈËÀàÂäµØ");
+					printf("äººç±»è½åœ°");
 					break;
 				}
 				if (i == 3)
 				{
-					printf("ÈËÀàÕÒÇ¹£¡£¡£¡");
+					printf("äººç±»æ‰¾æªï¼ï¼ï¼");
 					printf("\n");
 				}
 				if (i == 4)
 				{
-					printf("ÈËÀàÄÃµ½Ç¹\n");
-					printf("Ê²Ã´Ç¹ 1.AK47 2.°ÍÀ×ÌØ 3.AWM 4.98k 5.³å·æÇ¹--²ÉŞ±\n");
-					printf("(Ñ¡ÔñĞòºÅ)");
+					printf("äººç±»æ‹¿åˆ°æª\n");
+					printf("ä»€ä¹ˆæª 1.AK47 2.å·´é›·ç‰¹ 3.AWM 4.98k 5.å†²é”‹æª--é‡‡è–‡\n");
+					printf("(é€‰æ‹©åºå·)");
 					int qiang;
 					cin >> qiang;
 					while (qiang <= 0 && qiang >= 6)
 					{
-						printf("  ÊäÈë´íÎó£¬ÇëÖØĞÂÊäÈë\n");
-						printf("  1.AK47 2.°ÍÀ×ÌØ 3.AWM 4.98k 5.³å·æÇ¹--²ÉŞ±\n");
-						printf("(Ñ¡ÔñĞòºÅ)\n");
-						printf("ÈËÀàÀëÊ¤Àû½üÁËÒ»²½£¡£¡");
+						printf("  è¾“å…¥é”™è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥\n");
+						printf("  1.AK47 2.å·´é›·ç‰¹ 3.AWM 4.98k 5.å†²é”‹æª--é‡‡è–‡\n");
+						printf("(é€‰æ‹©åºå·)\n");
+						printf("äººç±»ç¦»èƒœåˆ©è¿‘äº†ä¸€æ­¥ï¼ï¼");
 						cin >> qiang;
 					}
 					if (qiang == 1)
 					{
 						cout << endl;
-						printf("¹§Ï²»ñµÃAK47");
+						printf("æ­å–œè·å¾—AK47");
 						cout << endl;
 						break;
 					}
 					if (qiang == 2)
 					{
 						cout << endl;
-						printf("¹§Ï²»ñµÃ°ÍÀ×ÌØ");
+						printf("æ­å–œè·å¾—å·´é›·ç‰¹");
 						cout << endl;
 						break;
 					}
 					if (qiang == 3)
 					{
 						cout << endl;
-						printf("¹§Ï²»ñµÃAWM");
+						printf("æ­å–œè·å¾—AWM");
 						cout << endl;
 						break;
 					}
 					if (qiang == 4)
 					{
 						cout << endl;
-						printf("¹§Ï²»ñµÃ98K");
+						printf("æ­å–œè·å¾—98K");
 						cout << endl;
 						break;
 					}
 					if (qiang == 5)
 					{
 						cout << endl;
-						printf("¹§Ï²»ñµÃ³å·æÇ¹--²ÉŞ±");
+						printf("æ­å–œè·å¾—å†²é”‹æª--é‡‡è–‡");
 						cout << endl;
 						break;
 					}
 				}
 				if (i == 5)
 				{
-					printf("ÈËÀàÕÒ×Óµ¯!!!\n");
+					printf("äººç±»æ‰¾å­å¼¹!!!\n");
 				}
 				if (i == 6)
 				{
-					printf("ÈËÀàÕÒµ½×Óµ¯!!!\n");
+					printf("äººç±»æ‰¾åˆ°å­å¼¹!!!\n");
 					break;
 				}
 				if (i == 7)
 				{
 					dianxue = dianxue / 2;
-					printf("µçÄÔÑªÁ¿Ö»Ê£°Ù·ÖÖ®50");
-					printf("ÈËÀàÀëÊ¤¸ü½üÒ»²½£¡£¡");
+					printf("ç”µè„‘è¡€é‡åªå‰©ç™¾åˆ†ä¹‹50");
+					printf("äººç±»ç¦»èƒœæ›´è¿‘ä¸€æ­¥ï¼ï¼");
 					break;
 				}
 				if (i == 8)
 				{
-					printf("µçÄÔËÀÍö!KO!!\n");
+					printf("ç”µè„‘æ­»äº¡!KO!!\n");
 					m = 1;
 					return m;
 					break;
@@ -589,82 +589,82 @@ int game()
 			{
 				if (j == 1)
 				{
-					printf("µçÄÔ×¼±¸½µÂä");
+					printf("ç”µè„‘å‡†å¤‡é™è½");
 					break;
 				}
 				if (j == 2)
 				{
-					printf("µçÄÔÂäµØ");
+					printf("ç”µè„‘è½åœ°");
 					break;
 				}
 				if (i == 3)
 				{
-					printf("µçÄÔÕÒÇ¹£¡£¡£¡");
+					printf("ç”µè„‘æ‰¾æªï¼ï¼ï¼");
 					printf("\n");
 				}
 				if (j == 4)
 				{
-					printf("µçÄÔÄÃµ½Ç¹\n");
-					printf("Ê²Ã´Ç¹ 1.AK47 2.°ÍÀ×ÌØ 3.AWM 4.98k 5.³å·æÇ¹--²ÉŞ±\n");
-					printf("(Ñ¡ÔñĞòºÅ)\n");
-					printf("Ñ¡Ôñ");
+					printf("ç”µè„‘æ‹¿åˆ°æª\n");
+					printf("ä»€ä¹ˆæª 1.AK47 2.å·´é›·ç‰¹ 3.AWM 4.98k 5.å†²é”‹æª--é‡‡è–‡\n");
+					printf("(é€‰æ‹©åºå·)\n");
+					printf("é€‰æ‹©");
 					cout << qiang2 << endl;
-					printf("µçÄÔÀëÊ¤Àû½üÁËÒ»²½£¡£¡");
+					printf("ç”µè„‘ç¦»èƒœåˆ©è¿‘äº†ä¸€æ­¥ï¼ï¼");
 					break;
 				}
 				if (qiang2 == 1)
 				{
 					cout << endl;
-					printf("¹§Ï²»ñµÃAK47");
+					printf("æ­å–œè·å¾—AK47");
 					cout << endl;
 					break;
 				}
 				if (qiang2 == 2)
 				{
 					cout << endl;
-					printf("¹§Ï²»ñµÃ°ÍÀ×ÌØ");
+					printf("æ­å–œè·å¾—å·´é›·ç‰¹");
 					cout << endl;
 					break;
 				}
 				if (qiang2 == 3)
 				{
 					cout << endl;
-					printf("¹§Ï²»ñµÃAWM");
+					printf("æ­å–œè·å¾—AWM");
 					cout << endl;
 					break;
 				}
 				if (qiang2 == 4)
 				{
 					cout << endl;
-					printf("¹§Ï²»ñµÃ98K");
+					printf("æ­å–œè·å¾—98K");
 					cout << endl;
 					break;
 				}
 				if (qiang2 == 5)
 				{
 					cout << endl;
-					printf("¹§Ï²»ñµÃ³å·æÇ¹--²ÉŞ±");
+					printf("æ­å–œè·å¾—å†²é”‹æª--é‡‡è–‡");
 					cout << endl;
 					break;
 				}
 				if (j == 5)
 				{
-					printf("µçÄÔÕÒ×Óµ¯!!!\n");
+					printf("ç”µè„‘æ‰¾å­å¼¹!!!\n");
 				}
 				if (j == 6)
 				{
-					printf("µçÄÔÕÒµ½×Óµ¯!!!\n");
+					printf("ç”µè„‘æ‰¾åˆ°å­å¼¹!!!\n");
 				}
 				if (j == 7)
 				{
 					renxue = renxue / 2;
-					printf("ÈËÀàÑªÁ¿Ö»Ê£°Ù·ÖÖ®50");
-					printf("µçÄÔÀëÊ¤¸ü½üÒ»²½£¡£¡");
+					printf("äººç±»è¡€é‡åªå‰©ç™¾åˆ†ä¹‹50");
+					printf("ç”µè„‘ç¦»èƒœæ›´è¿‘ä¸€æ­¥ï¼ï¼");
 					break;
 				}
 				if (j == 8)
 				{
-					printf("ÈËÀàËÀÍö!KO!!\n");
+					printf("äººç±»æ­»äº¡!KO!!\n");
 					m = 0;
 					return m;
 				}

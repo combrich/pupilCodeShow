@@ -1,0 +1,1137 @@
+#include<bits/stdc++.h>
+#include <iostream>
+#include <istream>
+#include<cmath>
+#include<cstdlib>
+#include<ctime>
+#include<set>
+using namespace std;
+int a=0;
+int zidan=0;
+int rzhuangbei=0;
+int dzhuangbei=0;
+int game2();
+int jb=0;
+int zuanshi=0;
+int youqiang=0;
+int jinbi=0;
+int jinbi20=0;
+int s=0;
+double dengji=1;
+int shangdian2();
+int guocheng();	
+void dengji2(int n);
+void shuying();
+void dating2();
+int time();
+int game();
+int jb2(int m);
+int shangdian2(int m2);
+void shuying2();
+void dating();
+void shuying2(int m)
+{
+	if(m==1)
+	{
+		cout<<"* *            *  *"<<endl;
+		cout<<" ****          ***"<<endl;
+		cout<<"   ***        ***"<<endl; 
+		cout<<"   **************"<<endl;
+		cout<<"   *  | 胜利 |  *"<<endl;
+		cout<<"   *  | 恭喜 |  *"<<endl;
+		cout<<"   *  | 大吉 |  *"<<endl;
+		cout<<"   *  | 大利 |  *"<<endl;
+		cout<<"   *  | 今晚 |  *"<<endl;
+		cout<<"   *  | 吃鸡 |  *"<<endl;
+		cout<<"   **************"<<endl;
+		return;	
+	}
+	if(m==0)
+	{
+		cout<<"* *            *  *"<<endl;
+		cout<<" ****          ****"<<endl;
+		cout<<"   ***        ***"<<endl; 
+		cout<<"   **************"<<endl;
+		cout<<"   *  | 失败 |  *"<<endl;
+		cout<<"   *  | 再接 |  *"<<endl;
+		cout<<"   *  | 再厉 |  *"<<endl;
+		cout<<"   *  | 加油!|  *"<<endl;
+		cout<<"   **************"<<endl;
+		return;		
+	}
+}
+void dating()
+{
+	cout<<"    *************************************"<<endl;
+	cout<<"    |钻石:"<<zuanshi<<"     金币: "<<jb<<"     等级: "
+		<<dengji <<"     |"<<endl;
+	cout<<"    *************************************"<<endl;
+	cout<<endl;
+	return ;
+}
+void dengji2(int n)
+{
+	if(n==1)
+	{
+		dengji=dengji+1;
+		printf("您的等级为");
+		cout<<dengji;
+		cout<<endl;		
+	}
+	if(n==0)
+	{
+		dengji=dengji+0.5;	
+		printf("您的等级为");
+		cout<<dengji;
+		cout<<endl;
+	}
+}
+int zspanduan(int zs)
+{
+	if(zs==1||zs==2||zs==3||zs==4)
+	{
+		if(zuanshi>=40000)
+		{
+			zuanshi=zuanshi-40000;
+			cout<<"购买成功！！！"<<endl;
+			printf("血量加50\n");
+			rzhuangbei=rzhuangbei+50;
+			dzhuangbei=dzhuangbei+25;
+			game2();
+		}
+		else
+		{
+			cout<<"钻石不够！！！";
+			cout<<endl<<"1.金币商店 2.继续游戏 3.结束游戏"<<endl;
+			int a;
+			cin>>a;
+			while(a!=1&&a!=2&&a!=3)
+			{
+				cout<<"输入错误！！"<<endl;
+				cin>>a; 
+			} 
+			if(a==1||a==2||a==3)
+			{
+				return a;
+			}
+		}
+	}
+}
+int zs(int m)
+{
+	if(m==1)
+	{
+		zuanshi=zuanshi+1000;
+		return zuanshi;
+	}
+	if(m==0)
+	{
+		zuanshi=zuanshi+500;
+		return zuanshi;		
+	}
+}
+int jb2(int m)
+{
+	if(m==1)
+	{
+		jinbi=jinbi+2000;
+		return jinbi; 
+	} 
+	if(m==0)
+	{
+		jb=jb+1000;
+		return jb;
+	}
+	
+}
+int shangdian1(int m2)
+{
+	if(m2==1)
+	{
+		printf("您的金币数为\n");
+		cout<<"$$$ ";
+		cout<<jb; 
+				cout<<endl;
+				int a;
+				cout<<"_____________________"<<endl;
+				cout<<"|1.AK47(30000)      |"<<endl;
+				cout<<"|2.巴雷特(90000)    |"<<endl;
+				cout<<"|3.沙漠之鹰（20000）|"<<endl;
+				cout<<"|4.左轮（15000）    |"<<endl;
+				cout<<"(      商品柜台     )"<<endl;
+				printf("这里有1.AK47(30000),2.巴雷特(90000),3.沙漠之鹰（20000），4.左轮（15000）");
+				printf("(选择序号)\n"); 
+				cin>>a;
+				for(int i=1;a<1&&a>=5;i++)
+				{
+					cout<<endl;
+					printf("这里有1.AK47(30000),2.巴雷特(90000),3.沙漠之鹰（20000），4.左轮（15000）");
+					printf("(选择序号)\n"); 
+					cin>>a;
+				}
+				if(a==1)
+				{
+					
+					if(jb>=30000)
+					{
+						jb=jb-30000;
+						printf("购买成功");
+						printf("是否继续游戏\n1.是 2.否");
+						youqiang=youqiang+1;
+						int jixu;
+						while(cin>>jixu)
+						{
+							if(jixu!=1&&jixu!=2)
+							{
+								cout<<"输入错误！！！"<<endl;
+								printf("请重新输入！！！\n");
+							}
+							if(jixu==1)
+							{
+								game2();	
+							} 
+							if(jixu==2)
+							{
+								return 0;
+							}							 
+						}
+					}
+					else
+					{
+						printf("金币不够");
+						printf("是否继续游戏\n1.是 2.否");
+						int jixu;
+						while(cin>>jixu)
+						{
+						if(jixu!=1&&jixu!=2)
+							{
+								cout<<"输入错误！！！"<<endl;
+								printf("请重新输入！！！\n");
+								
+							}
+			
+							if(jixu==1)
+							{
+								game2();	
+							} 
+							if(jixu==2)
+							{
+								return 0;
+							}							 
+						}
+
+					} 
+				}
+			
+				if(a==2)
+				{
+					if(jb>=90000)
+					{
+						youqiang=youqiang+1;
+						jb=jb-90000;
+						printf("购买成功"); 
+						printf("是否继续游戏\n1.是 2.否");
+						int jixu;
+						while(cin>>jixu)
+						{
+							if(jixu!=1&&jixu!=2)
+							{
+								cout<<"输入错误！！！"<<endl;
+								printf("请重新输入！！！\n");
+								
+							}
+							if(jixu==1)
+							{
+								game2();	
+							} 
+							if(jixu==2)
+							{
+								return 0;
+							}							 
+						}
+					}
+					else
+					{
+						printf("金币不够");
+						printf("是否继续游戏\n1.是 2.否");
+						int jixu;
+						while(cin>>jixu)
+						{
+							if(jixu!=1&&jixu!=2)
+							{
+								cout<<"输入错误！！！"<<endl;
+								printf("请重新输入！！！\n");
+							
+							}
+							if(jixu==1)
+							{
+								game2();	
+							} 
+							if(jixu==2)
+							{
+								return 0;
+							}							 
+						}
+					}
+				}
+
+				if(a==3)
+				{
+					if(jb>=20000)
+					{
+						youqiang=youqiang+1;
+						jb=jb-20000;
+						printf("购买成功");
+						printf("是否继续游戏\n1.是 2.否");
+						int jixu;
+						while(cin>>jixu)
+						{
+							if(jixu!=1&&jixu!=2)
+							{
+								cout<<"输入错误！！！"<<endl;
+								printf("请重新输入！！！\n");
+								
+							}
+							if(jixu==1)
+							{
+								game2();	
+							} 
+							if(jixu==2)
+							{
+								return 0;
+							}							 
+						}
+					}
+					else
+					{
+						printf("金币不够");
+						printf("是否继续游戏\n1.是 2.否");
+						int jixu;
+						while(cin>>jixu)
+						{
+							if(jixu!=1&&jixu!=2)
+							{
+								cout<<"输入错误！！！"<<endl;
+								printf("请重新输入！！！\n");
+								
+							}
+							if(jixu==1)
+							{
+								game2();	
+							} 
+							if(jixu==2)
+							{
+								return 0;
+							}							 
+						}
+					}
+				}
+				
+				if(a==4)
+				{
+					if(jb>=15000)
+					{
+						youqiang=youqiang+1;
+						jb=jb-15000;
+						printf("购买成功");
+						printf("是否继续游戏\n1.是 2.否");
+						int jixu;
+						while(cin>>jixu)
+						{
+							if(jixu!=1&&jixu!=2)
+							{
+								cout<<"输入错误！！！"<<endl;
+								printf("请重新输入！！！\n");
+							
+							}
+							if(jixu==1)
+							{
+								game2();	
+							} 
+							if(jixu==2)
+							{
+								return 0;
+							}							 
+						}
+				}
+				else
+				{
+					printf("金币不够");
+					printf("是否继续游戏\n1.是 2.否");
+					int jixu;
+					while(cin>>jixu)
+					{
+						if(jixu!=1&&jixu!=2)
+						{
+							cout<<"输入错误！！！"<<endl;
+							printf("请重新输入！！！\n");
+							
+						}
+						if(jixu==1)
+						{
+							game2();	
+						} 
+						if(jixu==2)
+						{
+							return 0;
+						}							 
+					}
+				}
+		}	
+	}
+}
+void shuying(int m2)
+{
+	if(m2==1)
+	{
+		shuying2(m2);
+		printf("金币加2000\n");
+		printf("钻石加1000\n"); 
+		printf("等级加1\n"); 
+		jb2(m2); 
+		zs(m2);
+		return;
+	}
+	if(m2==0)
+	{
+		shuying2(m2);
+		printf("金币加1000\n");
+		printf("钻石加500");
+		cout<<endl;
+		printf("等级加0.5"); 
+		cout<<endl; 
+		jb2(m2);
+		zs(m2);
+		return ;
+	}
+}
+void dating2(int n)
+{
+	if(n==1)
+	{
+		jinbi20=jinbi20+2000;
+		cout<<"    *************************************"<<endl;
+		cout<<"    钻石:"<<zuanshi<<"     金币: "<<jinbi20<<"     等级: "
+			<<dengji <<" "<<endl;
+		cout<<"    *************************************"<<endl;
+		cout<<endl;
+	}
+	else
+	{
+		jinbi20=jinbi20+1000;
+		cout<<"    *************************************"<<endl;
+		cout<<"    钻石:"<<zuanshi<<"     金币: "<<jinbi20<<"     等级: "
+			<<dengji <<"       "<<endl;
+		cout<<"    *************************************"<<endl;
+		cout<<endl;		
+	}
+	return ;
+}
+int guocheng()
+{	
+	int	jinbi=0;
+	int zuanshi=0; 
+	int m23;
+	int a;
+	do
+	{
+		int s;
+		m23=game();
+		if(m23==1)
+		{
+			shuying(m23);	
+			dengji2(m23);
+		}
+		if(m23==0)
+		{
+			shuying(m23);
+			dengji2(m23);
+		}
+		printf("是否结束游戏\n");	
+		printf("1是 2否\n(输入序号)");
+		int m;
+		cin>>m;
+		while(m!=1&&m!=2)
+		{
+			printf("输入错误\n");
+			printf("是否结束游戏\n");	
+			printf("1是 2否\n(输入序号)");	
+			cin>>m;
+		} 
+		if(m==1)
+		{
+			break;	
+		} 
+		if(m==2)
+		{
+			printf("好的，我们继续游戏\n");
+			dating2(m23);
+			printf("您要去哪里？\n1.金币商店购买枪 2.继续游戏 3.钻石商店购买枪\n");
+			printf("（输入序号）");
+			int xuhao2;
+			cin>>xuhao2;
+			while(xuhao2!=1&&xuhao2!=2&&xuhao2!=3)
+			{
+				printf("输入错误\n");
+				printf("您要去哪里？\n1.金币商店购买枪 2.继续游戏 3.钻石商店购买枪\n");
+				printf("（输入序号）");
+				cin>>xuhao2;
+			}
+			if(xuhao2==1)
+			{
+				int h=shangdian1(xuhao2);
+				if(h==0)
+			    {
+					break;
+				}
+			}
+			if(xuhao2==3)
+			{
+				int h=shangdian2(xuhao2);
+				{
+					if(h==3)
+					{
+						break;
+					}
+				}
+			} 
+ 		}
+	}while(1);
+	printf("游戏结束！！！"); 
+	return 0; 
+}
+int gamezhongjian(int n)
+{
+		int s;
+		srand(time(0));
+		int z=rand(),zhaoshu=z%3+1;
+		if(n==1)
+		{
+			if(zhaoshu==1)
+			{
+				printf("平局\n"); 
+				return s=2;
+			}
+			if(zhaoshu==2)
+			{
+				printf("人类胜利\n"); 
+				return s=0;
+			}
+			if(zhaoshu==3)
+			{
+				printf("电脑胜利,人类加油！！！\n"); 
+				return s=1;
+			}
+		}
+		if(n==2)
+		{
+			if(zhaoshu==1)
+			{
+				printf("电脑胜利,人类加油！！！\n");
+				return s=1; 
+			}
+			if(zhaoshu==2)
+			{
+				printf("平局\n");
+				return s=2;
+			}
+			if(zhaoshu==3)
+			{
+				printf("人类胜利\n");
+				return s=0;
+			}
+		}
+		if(n==3)
+		{
+			if(zhaoshu==1)
+			{
+				printf("人类胜利\n");
+				return s=0;
+			}
+			if(zhaoshu==2)
+			{
+				printf("电脑胜利,人类加油！！！\n"); 
+				return s=1;
+			}
+			if(zhaoshu==3)
+			{
+				
+				printf("平局\n");
+				return s=2;
+			}
+		}
+}
+void jiemian2(int a)
+{
+	int b;
+	if(a==1)
+	{
+		printf("1终结战士\n");
+		printf("2哪吒将军\n");
+		printf("3月宫守卫\n");
+		printf("4斗罗大陆--唐三\n");
+		printf("5阳光沙滩枪手\n");
+		printf("6龍\n");
+		printf("7冷锋\n");
+		printf("8欧布奥特曼\n");
+		printf("(输入序号)\n");
+		cin>>b;
+		if(b==1)
+		{
+			printf("好的,你已经成为终结战士\n");
+		}
+		if(b==2)
+		{
+			printf("好的,你已经成为哪吒将军\n");	
+		} 
+		if(b==3)
+		{
+			printf("好的,你已经成为月宫守卫\n");	
+		} 
+		if(b==4)
+		{
+			printf("好的,你已经成为唐三\n");	
+		} 
+		if(b==5)
+		{
+			printf("好的,你已经成为阳光沙滩枪手\n");
+		}
+		if(b==6)
+		{
+			printf("好的,你已经成为龍\n");
+		}
+		if(b==7)
+		{
+			printf("好的,你已经成为冷锋\n");
+		}
+		if(b==8)
+		{
+			printf("好的,你已经成为欧布奥特曼\n");
+		} 
+		while(b<=0||b>=9)
+		{
+			printf("输入错误，请重新输入\n");
+			printf("1终结战士\n");
+			printf("2哪吒将军\n");
+			printf("3月宫守卫\n");
+			printf("4斗罗大陆--唐三\n");
+			printf("5阳光沙滩枪手\n");
+			printf("6龍\n");
+			printf("7冷锋\n");
+			printf("8欧布奥特曼\n");
+			printf("(输入序号)\n");
+			cin>>b;
+			if(b==1)
+			{
+				printf("好的,你已经成为终结战士\n");
+			}
+			if(b==2)
+			{
+				printf("好的,你已经成为哪吒将军\n");	
+			} 
+			if(b==3)
+			{
+				printf("好的,你已经成为月宫守卫\n");	
+			} 
+			if(b==4)
+			{
+				printf("好的,你已经成为唐三\n");	
+			} 
+			if(b==5)
+			{
+				printf("好的,你已经成为阳光沙滩枪手\n");
+			}
+			if(b==6)
+			{
+				printf("好的,你已经成为龍\n");
+			}		
+			if(b==7)
+			{
+				printf("好的,你已经成为冷锋\n");
+			} 
+			if(b==8)
+			{
+				printf("好的,你已经成为欧布奥特曼\n");
+			} 
+		}
+	}
+	if(a==2)
+	{
+		printf("1兔兔战士\n");	
+		printf("2月宫仙子\n");
+		printf("3阳光校花\n");
+		printf("4斗罗大陆--小舞\n");
+		printf("5古代公主\n"); 
+		printf("6暴走哈莉\n");
+		printf("7狂暴女神\n");
+		printf("8奥特之母\n");
+		printf("(输入序号)\n");
+		cin>>b; 
+		if(b==1)
+		{
+			printf("好的,你已经成为兔兔战士\n");
+		}
+		if(b==2)
+		{
+			printf("好的,你已经成为月宫仙子\n");	
+		} 
+		if(b==3)
+		{
+			printf("好的,你已经成为阳光校花\n");	
+		} 
+		if(b==4)
+		{
+			printf("好的,你已经成为小舞\n");	
+		} 
+		if(b==5)
+		{
+			printf("好的,你已经成为古代公主\n");
+		}
+		if(b==6)
+		{
+			printf("好的,你已经成为暴走哈莉\n");
+		}
+		if(b==7)
+		{
+			printf("好的,你已经成为狂暴女神\n");
+		} 
+		if(b==8)
+		{
+			printf("好的,你已经成为奥特之母\n");
+		} 
+		while(b<=0||b>=9)
+		{
+			printf("输入错误，请重新输入\n");
+			printf("1兔兔战士\n");	
+			printf("2月宫仙子\n");
+			printf("3阳光校花\n");
+			printf("4斗罗大陆--小舞\n");
+			printf("5古代公主\n"); 
+			printf("6暴走哈莉\n");
+			printf("7狂暴女神\n");
+			printf("8奥特之母\n");
+			printf("(输入序号)\n");
+			cin>>b; 
+			if(b==1)
+			{
+				printf("好的,你已经成为兔兔战士\n");
+			}
+			if(b==2)
+			{
+				printf("好的,你已经成为月宫仙子\n");	
+			} 
+			if(b==3)
+			{
+				printf("好的,你已经成为阳光校花\n");	
+			} 
+			if(b==4)
+			{
+				printf("好的,你已经成为小舞\n");	
+			} 
+			if(b==5)
+			{
+				printf("好的,你已经成为古代公主\n");
+			}
+			if(b==6)
+			{
+				printf("好的,你已经成为暴走哈莉\n");
+			}	
+			if(b==7)
+			{
+				printf("好的,你已经成为狂暴女神\n");
+			} 
+			if(b==8)
+			{
+				printf("好的,你已经成为奥特之母\n");
+			} 
+		}
+		return;
+	}		
+}
+void jiemian()
+{
+	int s=0;
+	long long i;
+	for(i=1;i<=1000000;i++)
+	{
+		if(i==10000||i==5000)
+		{
+			cout<<"正在加载";
+			cout<<"***";
+			cout<<endl;	
+		}		
+		if(i==7000&&s==0)
+		{
+			s++;
+			cout<<"不玩盗版游戏";
+			cout<<endl; 
+		}
+	}	
+	cout<<"加载完成！！！";
+	cout<<endl;	
+	int a;
+	printf("欢迎进入《吃鸡(剪刀、石头、布版)》\n");
+	printf("作者金子皓\n");
+	printf("请输入密码：(密码是"); 
+	srand(time(0)); 
+	int mima2=rand()%100+1;
+	cout<<mima2<<"*15的积)";
+	cout<<endl; 
+	printf("不要空格！！！"); 
+	int mima;
+	printf("\n");
+	cin>>mima;
+	while(mima!=mima2*15)
+	{
+		printf("输入错误，请重新输入\n");
+		printf("请重新输入密码：(密码");
+		cout<<mima2<<"*15的积)";
+		cout<<endl; 
+		printf("不要空格！！！");
+		cin>>mima; 		
+	} 
+	cout<<"  /"<<endl;
+	cout<<"\\/";
+	cout<<"Right!!!!";
+	cout<<endl;
+	cout<<endl;
+	printf("你好，请输入性别\n");
+	printf("1男，2女(输入序号)\n");
+	cin>>a;
+	int b;
+	while(a!=1&&a!=2)
+	{
+		printf("输入错误，请重新输入\n");
+		printf("你好，请输入性别\n");
+		printf("1男，2女(输入序号)\n");
+		cin>>a;
+	}
+	jiemian2(a);
+	dating();
+	return;
+}
+int game()
+{
+	printf("游戏开始！！！"); 
+	int m;
+	int i=0;
+	int j=0;
+	int renxue=100+rzhuangbei;
+	int dianxue=100+dzhuangbei; 
+	for(;;)
+	{
+		printf("\n请先出招\n");
+		printf("(1石头)\n");
+		printf("(2剪刀)\n");
+		printf("(3布)\n");
+		printf("(输入序号)\n");	
+		int n;
+		cin>>n;
+		srand(time(0));
+		int z=rand(),qiang2=z%6+1;
+		int s;
+		int m; 
+		while(n!=1&&n!=2&&n!=3)
+		{
+			printf("输入错误，请重新输入\n");
+			printf("\n请再次出招\n");
+			printf("(1石头)\n");
+			printf("(2剪刀)\n");
+			printf("(3布)\n");
+			printf("(输入序号)\n");
+			cin>>n;	
+		}
+		int  game3=gamezhongjian(n);
+		if(game3==0)
+		{
+			i++;
+			do
+			{
+				
+				if(i==1)
+				{
+					printf("人类准备降落");
+					break;
+				}
+				if(i==2)
+				{
+					printf("人类落地");
+					break;
+				} 
+				if(youqiang<=0)
+				{
+					if(i==3)
+					{
+						printf("人类找枪！！！");
+						printf("\n"); 
+					}
+					if(i==4)
+					{
+						printf("人类拿到枪\n");
+						printf("什么枪 1.AK47 2.巴雷特 3.AWM 4.98k 5.冲锋枪--采薇 6.M4A1\n");
+						printf("(选择序号)");
+						cout<<endl; 
+						int qiang;
+						cin>>qiang; 
+						while(qiang<=0&&qiang>=7)
+						{
+							printf("  输入错误，请重新输入\n");	
+							printf("  1.AK47 2.巴雷特 3.AWM 4.98k 5.冲锋枪--采薇 6.M4A1\n");
+							printf("(选择序号)\n");
+							printf("人类离胜利近了一步！！"); 
+							cin>>qiang;
+						} 
+							if(qiang==1)
+							{
+								cout<<endl;
+								printf("恭喜获得AK47");	
+								cout<<endl;
+								break; 	
+							}
+							if(qiang==2)
+							{
+								cout<<endl;
+								printf("恭喜获得巴雷特");
+								cout<<endl;	
+								break; 	
+							}		
+							if(qiang==3)
+							{
+								cout<<endl;
+								printf("恭喜获得AWM");	
+								cout<<endl;
+								break; 	
+							}	
+							if(qiang==4)
+							{
+								cout<<endl;
+								printf("恭喜获得98K");	
+								cout<<endl;
+								break; 	
+							}	
+							if(qiang==5)
+							{
+								cout<<endl;
+								printf("恭喜获得冲锋枪--采薇");	
+								cout<<endl;
+								break; 	
+							}
+							if(qiang==6)
+							{
+								cout<<endl;
+								printf("恭喜获得M4A1");	
+								cout<<endl;
+								break; 	
+							}
+						}
+						if(i==5)
+						{
+							printf("人类找子弹!!!\n"); 
+							break;
+						}
+						if(i==6)
+						{
+							 printf("人类找到子弹!!!\n"); 
+							 break;
+						}
+						while(i>6)
+						{
+							dianxue=dianxue-50;
+							if(dianxue==0)
+							{		
+								printf("电脑死亡!KO!!\n");
+								m=1; 
+								return m;
+								break;
+							} 
+							printf("电脑血量只剩百分之");
+							cout<<dianxue<<endl;
+							printf("人类离胜更近一步！！");  
+							break; 
+						}
+					}
+				else
+				{
+					if(i==3)
+					{
+						printf("人类找子弹!!!\n"); 
+						break;
+					}
+					if(i==4)
+					{
+						 printf("人类找到子弹!!!\n"); 
+						 break;
+					}
+					while(i>4)
+					{	
+					dianxue=dianxue-50;
+						if(dianxue==0)
+						{		
+							printf("电脑死亡!KO!!\n");
+							m=1; 
+							return m;
+							break;
+						} 
+						printf("电脑血量只剩百分之");
+						cout<<dianxue<<endl;
+						printf("人类离胜更近一步！！");  
+						break; 
+					}
+	
+				}
+
+			}while(s==1);
+		}
+		if(game3==1)
+		{
+			j++;
+			do
+			{
+				if(j==1)
+				{
+					printf("电脑准备降落");
+					break;
+				}
+				if(j==2)
+				{
+					printf("电脑落地");
+					break;
+				} 
+				if(j==3)
+				{
+					printf("电脑找枪！！！");
+					printf("\n"); 
+					break;
+				}
+				if(j==4)
+				{
+					printf("电脑拿到枪\n");
+					printf("什么枪 1.AK47 2.巴雷特 3.AWM 4.98k 5.冲锋枪--采薇 6.M4A1\n");
+					printf("(选择序号)\n");
+					printf("选择");
+					cout<<qiang2<<endl;
+					printf("电脑离胜利近了一步！！"); 
+						if(qiang2==1)
+						{
+							cout<<endl;
+							printf("恭喜获得AK47");	
+							cout<<endl;
+							break; 	
+						}
+						if(qiang2==2)
+						{
+							cout<<endl;
+							printf("恭喜获得巴雷特");
+							cout<<endl;	
+							break; 	
+						}		
+						if(qiang2==3)
+						{
+							cout<<endl;
+							printf("恭喜获得AWM");	
+							cout<<endl;
+							break; 	
+						}	
+						if(qiang2==4)
+						{
+							cout<<endl;
+							printf("恭喜获得98K");	
+							cout<<endl;
+							break; 	
+						}	
+						if(qiang2==5)
+						{
+							cout<<endl;
+							printf("恭喜获得冲锋枪--采薇");	
+							cout<<endl;
+							break; 	
+						}
+						if(qiang2==6)
+						{
+							cout<<endl;
+							printf("恭喜获得M4A1");	
+							cout<<endl;
+							break; 	
+						}
+					}
+				if(j==5)
+				{
+					printf("电脑找子弹!!!\n");
+					break; 
+				} 
+				if(j==6)
+				{
+					printf("电脑找到子弹!!!\n");
+					break;
+				}
+				while(j>6)
+				{
+					renxue=renxue-50;	
+					if(renxue==0)
+					{
+						printf("人类死亡!KO!!\n");
+						m=0;  
+						return m;
+						break;
+					} 
+					printf("人类血量只剩百分之");
+					cout<<renxue<<endl;
+					printf("电脑离胜更近一步！！"); 	
+					break;
+			
+					cout<<endl;
+					}
+					break;
+			}while(s==0);	
+		}
+	}
+} 
+
+int main()
+{
+	jiemian();
+	guocheng();
+}
+int game2()
+{
+	guocheng();
+}
+int shangdian2(int m2)
+{
+	int i=0;
+	int a;
+	printf("您的钻石数量为");
+	cout<<zuanshi; 
+	cout<<endl;
+	cout<<"________________"<<endl;
+	cout<<"|1.三级头(40000)|"<<endl;
+	cout<<"|2.三级甲(40000)|"<<endl;
+	cout<<"|3.三级背包40000|"<<endl;
+	cout<<"|4.强护膝(40000)|"<<endl;
+	cout<<"(    商品柜台   )"<<endl;
+	printf("1.三级头(40000)\n 2.三级甲(40000)\n 3.三级背包(40000)\n 4.护膝(40000)\n");
+	printf("(选择序号)\n"); 
+	int zs;
+	cin>>zs;
+	while(zs!=1&&zs!=2&&zs!=3&&zs!=4)
+	{
+			printf("输入错误");
+			printf("1.三级头(40000)\n 2.三级甲(40000)\n 3.三级背包(40000)\n 4.护膝(40000)\n");
+			printf("(选择序号)\n"); 		
+			cout<<endl; 
+			cin>>zs;
+	}
+	int m=zspanduan(zs);
+	if(m==1)
+	{
+		shangdian1(1);
+	}
+	if(m==2)
+	{
+		game2();
+	}
+	if(m==3)
+	{
+		return 3; 
+	}
+}
